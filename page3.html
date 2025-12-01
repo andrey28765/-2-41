@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            color: white;
+            background-color: blue;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 50px;
+            content: counter(name);
+        }
+        body {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .card {
+        width: calc(33.333% - 30px);
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+    </style>
+</head>
+<ul>
+    <a href="task4.html">Главная1</a>
+    <a href="page2.html">Меню</a>
+    <a href="page3.html">Рецепты</a>  
+    <a href="page4.html">Контакты</a>  
+    </ul>
+<h1>Рецепты</h1>
+<body>
+    <div class="cards-container">
+    <div class="card">
+            <img src="https://static.1000.menu/res/640/img/content-v2/d9/e8/24979/borshch-klassicheskii-s-govyadinoi_1615365982_21_max.jpg" alt="Борщ">
+            <p>Борщ</p>
+            <h>Красивый, оригинальный, из обычных продуктов, самый лучший! Классический борщ с говядиной сварить не так уж и сложно, а вот сохранить яркий рубиновый цвет этого первого блюда у многих хозяек не получается. Следуя нехитрым инструкциям, вы сварите не только вкусный, но и очень красивый борщ.</h>
+    </div>
+           <div class="card">
+            <img src="https://www.russianfood.com/dycontent/images_upl/350/sm_349256.jpg" alt="Бюфстроганов">
+            <p>Бюфстроганов</p>
+            <h1>Бефстроганов и картофельное пюре – идеальное блюдо как раз на такой случай. Мягкие кусочки говядины в томатно-сливочном соусе, да с нежной, воздушной картошечкой.Это очень вкусно</h1>
+           </div>
+            <div class="card">
+            <img src="https://menunedeli.ru/wp-content/uploads/2016/11/Kompot-iz-smesi-suhofruktov-kak-v-detskom-sadu-500х350_opt-500x334.jpg">
+            <p>Компот</p> 
+            <h2>Компот из сухофруктов стойко ассоциируется с детством и зимой, а точнее с Рождеством, поскольку мама всегда варила его именно на этот праздник.Этот компот мне всегда нравился, потому что курага, чернослив и изюм дают приятный кисло-сладкий вкус, который никогда не надоедает</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
